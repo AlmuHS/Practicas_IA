@@ -1,0 +1,43 @@
+#include "Maquina.h"
+
+using namespace std;
+
+bool sMax(int profundidad){
+    return (profundidad%2==0);
+}
+
+Maquina::Maquina()
+{
+    //ctor
+}
+
+int Maquina::Busqueda(Restar_Cuadrados A, int limite){
+    int eleccion, heuristico=0;
+    vector<Restar_Cuadrados> lista;
+
+    if(A.get_valor()==0){
+        if( sMax(A.get_profundidad() )) return -1000;
+        else return 1000;
+    }
+    else if(A.get_profundidad() >= limite) return heuristico(nodo);
+
+    if( esMax(A.get_profundidad()) ) heuristico=-10000;
+    else heuristico=10000;
+
+    for(int i=1; i<A.get_valor(); i++)
+        lista.push_back( Restar_Cuadrados( i, A.get_valor(), A.get_profundidad() ) );
+
+    for(int j=0; j!=lista.end(); j++){
+        Busqueda(lista[i], 3);
+        if( sMax( lista[i].get_profundidad() ) ){
+            if(lista[i].get_heuristica()>=heuristico){
+                heuristico=lista[i].get_heuristica();
+                eleccion=lista[i].get_eleccion();
+            }
+        }
+    }
+
+    return eleccion;
+}
+
+

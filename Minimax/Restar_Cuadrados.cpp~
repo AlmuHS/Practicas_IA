@@ -1,0 +1,50 @@
+#include "Restar_Cuadrados.h"
+
+using namespace std;
+
+Restar_Cuadrados::Restar_Cuadrados(int accion, int val, int prof)
+{
+    valor=val;
+	eleccion=accion;
+	profundidad=prof;
+}
+
+int Restar_Cuadrados::jugar(int num){
+    Maquina mac;
+    int resp;
+    while(num>0){
+        eleccion=mac.Busqueda(Restar_Cuadrados(0, num, profundidad), 3);
+		cout<<"La maquina elige el valor "<<eleccion<<endl
+            <<"Quedan "<<valor-pow(eleccion, 2)<<endl;
+        num=valor-pow(eleccion,2);
+        cout<<"Elige valor: ";
+        cin>>resp;
+        cout<<"Has elegido el valor "<<resp<<endl
+            <<"Quedan "<<num-pow(resp,2)<<endl;
+    }
+}
+
+int Restar_Cuadrados::heuristica(){
+    if(eleccion == pow((int)sqrt(eleccion), 2) ) heuristica=1000;
+    else if(valor==pow(eleccion, 2)) heuristica=1000;
+    else{
+
+    }
+}
+
+
+int Restar_Cuadrados::get_valor(){
+    return valor;
+}
+
+int Restar_Cuadrados::get_profundidad(){
+    return profundidad;
+}
+
+int Restar_Cuadrados::get_heuristica(){
+    return heuristica;
+}
+
+int Restar_Cuadrados::get_eleccion(){
+    return eleccion;
+}

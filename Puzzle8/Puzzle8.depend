@@ -1,0 +1,104 @@
+# depslib dependency file v1.0
+1396466162 source:/home/almu/Puzzle8/main.cpp
+	<iostream>
+	"Puzzle8.h"
+	"Anchura.h"
+	"Profundidad.h"
+
+1396465008 source:/home/almu/Puzzle8/Puzzle8.cpp
+	"Puzzle8.h"
+
+1396264997 /home/almu/Puzzle8/Puzzle8.h
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<ctime>
+
+1396259219 source:/home/almu/Puzzle8/Anchura.cpp
+	"Anchura.h"
+
+1396259721 /home/almu/Puzzle8/Anchura.h
+	"Puzzle8.h"
+	<list>
+	<queue>
+	<typeinfo>
+
+1395917307 /home/almu/Puzzle8/Algoritmos.h
+	"Puzzle8.h"
+	<list>
+	<typeinfo>
+
+1396357527 source:/home/almu/Puzzle8/A_estrella.cpp
+	"A_estrella.h"
+
+1396340900 /home/almu/Puzzle8/A_estrella.h
+	<queue>
+	<list>
+	"Puzzle8.h"
+	<typeinfo>
+	<algorithm>
+
+1396284231 source:/home/almu/Puzzle8/Profundidad.cpp
+	"Profundidad.h"
+
+1396284132 /home/almu/Puzzle8/Profundidad.h
+	<stack>
+	<list>
+	"Puzzle8.h"
+	<typeinfo>
+
+1396443716 source:/home/almu/Puzzle8/Greedy.cpp
+	"Greedy.h"
+
+1396443409 /home/almu/Puzzle8/Greedy.h
+	<queue>
+	<list>
+	"Puzzle8.h"
+	<typeinfo>
+
+1396357526 source:f:\puzzle8\a_estrella.cpp
+	"A_estrella.h"
+
+1396340900 f:\puzzle8\a_estrella.h
+	<queue>
+	<list>
+	"Puzzle8.h"
+	<typeinfo>
+	<algorithm>
+
+1396264996 f:\puzzle8\puzzle8.h
+	<iostream>
+	<cstdlib>
+	<cstring>
+	<ctime>
+
+1396259218 source:f:\puzzle8\anchura.cpp
+	"Anchura.h"
+
+1396259720 f:\puzzle8\anchura.h
+	"Puzzle8.h"
+	<list>
+	<queue>
+	<typeinfo>
+
+1396443716 source:f:\puzzle8\greedy.cpp
+	"Greedy.h"
+
+1396443408 f:\puzzle8\greedy.h
+	<queue>
+	<list>
+	"Puzzle8.h"
+	<typeinfo>
+
+1396517004 source:f:\puzzle8\profundidad.cpp
+	"Profundidad.h"
+
+1396284132 f:\puzzle8\profundidad.h
+	<stack>
+	<list>
+	"Puzzle8.h"
+	<typeinfo>
+
+1396465008 source:f:\puzzle8\puzzle8.cpp
+	"Puzzle8.h"
+

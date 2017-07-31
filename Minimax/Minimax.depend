@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1400420850 source:/home/almu/Minimax/main.cpp
+	<iostream>
+	"Restar_Cuadrados.h"
+
+1400434785 source:/home/almu/Minimax/Maquina.cpp
+	"Maquina.h"
+
+1400412337 /home/almu/Minimax/Maquina.h
+	"Restar_Cuadrados.h"
+	<vector>
+
+1400435052 /home/almu/Minimax/Restar_Cuadrados.h
+	<iostream>
+	<cmath>
+
+1400434809 source:/home/almu/Minimax/Restar_Cuadrados.cpp
+	"Restar_Cuadrados.h"
+	"Maquina.h"
+
