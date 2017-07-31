@@ -18,3 +18,18 @@
 	"Restar_Cuadrados.h"
 	"Maquina.h"
 
+1501536404 source:/home/almu/Practicas_IA/Minimax/main.cpp
+	<iostream>
+	"Restar_Cuadrados.h"
+
+1501536511 /home/almu/Practicas_IA/Minimax/Restar_Cuadrados.h
+	<iostream>
+	<cmath>
+
+1501536449 source:/home/almu/Practicas_IA/Minimax/Maquina.cpp
+	"Maquina.h"
+
+1501536463 /home/almu/Practicas_IA/Minimax/Maquina.h
+	"Restar_Cuadrados.h"
+	<vector>
+
