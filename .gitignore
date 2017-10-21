@@ -1,0 +1,11 @@
+# Directories of object and binary files in C
+bin/
+obj/
+
+# Directories of classes files in Java
+classes/
+.classpath
+.project
+
+# Temporary files
+*~
