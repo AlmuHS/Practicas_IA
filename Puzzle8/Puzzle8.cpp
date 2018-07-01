@@ -34,13 +34,15 @@ Puzzle8::Puzzle8(int num[9]){
 
 Puzzle8 ::Puzzle8(Puzzle8 *ppadre){
     padre=ppadre;
-    profundidad=padre->profundidad+1;
-    for(int j=0; j<3; j++){
-        for(int k=0; k<3; k++){
-            puzzle[j][k]=padre->puzzle[j][k];
+    if(ppadre != NULL){
+        profundidad=padre->profundidad+1;
+
+        for(int j=0; j<3; j++){
+            for(int k=0; k<3; k++){
+                puzzle[j][k]=padre->puzzle[j][k];
+            }
         }
     }
-
 }
 
 void Puzzle8::hueco(int &x, int &y){
@@ -124,12 +126,12 @@ Puzzle8* Puzzle8::mover_arriba(){
 }
 
 Puzzle8* Puzzle8::generaHijos(){
-    Puzzle8 *p=new Puzzle8[4];
+    Puzzle8 *p = new Puzzle8[4];
     padre=this;
-    p[0]=mover_abajo();
-    p[1]=mover_arriba();
-    p[2]=mover_der();
-    p[3]=mover_izq();
+    p[0] = mover_abajo();
+    p[1] = mover_arriba();
+    p[2] = mover_der();
+    p[3] = mover_izq();
     return p;
 }
 
