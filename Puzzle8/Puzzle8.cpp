@@ -9,7 +9,7 @@ Puzzle8::Puzzle8(){
     srand(time(NULL));
     for(int i=0; i<9; i++){
         char numero=abs(rand()%10);
-        while(strchr(num, numero)!=NULL) numero=abs(rand()%10);
+        while(strchr(num, numero)==NULL) numero=abs(rand()%10);
         num[i]=numero;
     }
     int n=0;
